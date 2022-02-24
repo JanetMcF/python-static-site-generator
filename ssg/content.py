@@ -14,7 +14,7 @@ class Content(Mapping):
         return cls(metadata, content)
 
     def __init__(self, metadata, content):
-        self.metadata = metadata
+        self.data = metadata
         self.data["content"] = content
 
     @property
